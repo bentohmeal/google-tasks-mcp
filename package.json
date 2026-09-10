@@ -1,0 +1,23 @@
+{
+  "name": "google-tasks-mcp",
+  "version": "1.0.0",
+  "description": "Personal MCP server exposing Benedict's Google Tasks lists to Claude",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/server.js",
+    "authorize": "node dist/authorize.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0"
+  }
+}
